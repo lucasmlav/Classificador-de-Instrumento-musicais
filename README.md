@@ -22,26 +22,20 @@ classificador-de-instrumentos-musicais/
 │   └── weights.bin     # Pesos da rede neural
 ```
 
-## ▶️ Como rodar o projeto
+### 🪇 Pré-requisitos
 
-> ⚠️ Este projeto **precisa ser executado em um servidor local via liver server**.
+- Navegador atual
+- Editor de código 
+- Modelo treinado com o Google Teachable Machine (arquivos model.json e metadata.json)
 
-### ✅ Requisitos
+## 🪘 Funcionamento
 
-- Navegador moderno (Chrome, Brave, Firefox...)
-- Editor de código (VS Code recomendado)
-- Extensão **Live Server** no VS Code
+1. **Inicialização do Modelo**: Assim que o aplicativo é iniciado, ele tenta carregar o modelo treinado em TensorFlow.js e seus metadados a partir da pasta model.
 
-### 🧪 Passo a passo com Live Server (VS Code)
+2. **Upload de Imagem**: O usuário pode enviar uma imagem tanto arrastando o arquivo para a interface quanto selecionando-o manualmente.
 
-1. Clone o repositorio em sua maquina local.
-2. Abra o VS Code e instale a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-3. Abra o repositorio pelo vscode e com liveserver ja instalado, selecione no canto inferior direito **"Go Live"**.
-4. O navegador será aberto automaticamente e o sistema estará pronto para uso.
-5. Envie uma imagem de roupa e clique em **"Classificar"** para ver o resultado.
+3. **Pré-processamento**: A imagem enviada é automaticamente redimensionada para 224x224 pixels e normalizada, garantindo compatibilidade com o formato de entrada esperado pelo modelo.
 
-### 🚫 Não funciona com duplo clique no `index.html`
+4. **Classificação**: O modelo analisa a imagem e calcula a probabilidade de pertencimento a cada uma das classes disponíveis.
 
-Por segurança, navegadores modernos bloqueiam o acesso a arquivos locais via `file://`, impedindo que o modelo carregue corretamente.
-
-Use sempre o Live Server para rodar o projeto localmente.
+5. **Visualização dos resultados**: Os resultados da classificação são exibidos em ordem decrescente de probabilidade, acompanhados de barras de progresso que indicam visualmente o nível de confiança do modelo.
