@@ -6,16 +6,12 @@ A execução desse projeto permite que usuário **enviar uma imagem de um instru
 
 ## 🔧 Ferramentas utilizadas
 
-- HTML5
-- CSS3
-- JavaScript (puro)
-- TensorFlow.js
-- Teachable Machine
+- HTML5; CSS3; TensorFlow.js; Teachable Machine; JavaScript.
 
-## 📁 Estrutura de Pastas
+## 🎼 Estrutura do Projeto
 
 ```bash
-classificador-roupas/
+classificador-de-instrumentos-musicais/
 
 ├── index.html          # Página principal da aplicação
 ├── style.css           # Estilos da aplicação
