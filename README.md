@@ -39,3 +39,11 @@ classificador-de-instrumentos-musicais/
 4. **Classificação**: O modelo analisa a imagem e calcula a probabilidade de pertencimento a cada uma das classes disponíveis.
 
 5. **Visualização dos resultados**: Os resultados da classificação são exibidos em ordem decrescente de probabilidade, acompanhados de barras de progresso que indicam visualmente o nível de confiança do modelo.
+
+## 🎵 Observações 
+
+- Todo o processamento é realizado diretamente no navegador, sem que as imagens sejam enviadas para servidores externos
+- O desempenho pode variar conforme as capacidades do dispositivo e o navegador em uso.
+- Modelos com maior complexidade podem demandar mais tempo para serem carregados e processarem as imagens.
+
+
